@@ -17,6 +17,11 @@
 		C61E808E22D5B803009D1566 /* CreditScoreProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808D22D5B803009D1566 /* CreditScoreProviderProtocol.swift */; };
 		C61E809122D5B8AD009D1566 /* CreditScoreMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809022D5B8AD009D1566 /* CreditScoreMapper.swift */; };
 		C61E809422D5BBE9009D1566 /* CreditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809322D5BBE9009D1566 /* CreditScore.swift */; };
+		C61E809722D5BC96009D1566 /* LoadCreditScoreUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809622D5BC96009D1566 /* LoadCreditScoreUseCase.swift */; };
+		C61E809A22D5BCA5009D1566 /* LoadCreditScoreUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809922D5BCA5009D1566 /* LoadCreditScoreUseCaseProtocol.swift */; };
+		C61E809C22D5BE0E009D1566 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809B22D5BE0E009D1566 /* BaseUseCase.swift */; };
+		C61E809E22D5BE2F009D1566 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809D22D5BE2F009D1566 /* NetworkProvider.swift */; };
+		C61E80A022D5BE58009D1566 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809F22D5BE58009D1566 /* NetworkProviderProtocol.swift */; };
 		C658063A22D4F36300DB4AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063922D4F36300DB4AE3 /* AppDelegate.swift */; };
 		C658063C22D4F36300DB4AE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063B22D4F36300DB4AE3 /* ViewController.swift */; };
 		C658063F22D4F36300DB4AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C658063D22D4F36300DB4AE3 /* Main.storyboard */; };
@@ -60,6 +65,11 @@
 		C61E808D22D5B803009D1566 /* CreditScoreProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreProviderProtocol.swift; sourceTree = "<group>"; };
 		C61E809022D5B8AD009D1566 /* CreditScoreMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreMapper.swift; sourceTree = "<group>"; };
 		C61E809322D5BBE9009D1566 /* CreditScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScore.swift; sourceTree = "<group>"; };
+		C61E809622D5BC96009D1566 /* LoadCreditScoreUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCreditScoreUseCase.swift; sourceTree = "<group>"; };
+		C61E809922D5BCA5009D1566 /* LoadCreditScoreUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCreditScoreUseCaseProtocol.swift; sourceTree = "<group>"; };
+		C61E809B22D5BE0E009D1566 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
+		C61E809D22D5BE2F009D1566 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		C61E809F22D5BE58009D1566 /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
 		C658063622D4F36300DB4AE3 /* CreditScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C658063922D4F36300DB4AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C658063B22D4F36300DB4AE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +174,7 @@
 			children = (
 				C61E808A22D5B7BF009D1566 /* Abstraction */,
 				C61E808F22D5B896009D1566 /* Mapper */,
+				C61E809D22D5BE2F009D1566 /* NetworkProvider.swift */,
 				C61E808B22D5B7F8009D1566 /* CreditScoreProvider.swift */,
 			);
 			path = Provider;
@@ -172,6 +183,7 @@
 		C61E808A22D5B7BF009D1566 /* Abstraction */ = {
 			isa = PBXGroup;
 			children = (
+				C61E809F22D5BE58009D1566 /* NetworkProviderProtocol.swift */,
 				C61E808D22D5B803009D1566 /* CreditScoreProviderProtocol.swift */,
 			);
 			path = Abstraction;
@@ -191,6 +203,24 @@
 				C61E809322D5BBE9009D1566 /* CreditScore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C61E809522D5BC6E009D1566 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C61E809822D5BC9A009D1566 /* Abstraction */,
+				C61E809B22D5BE0E009D1566 /* BaseUseCase.swift */,
+				C61E809622D5BC96009D1566 /* LoadCreditScoreUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C61E809822D5BC9A009D1566 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				C61E809922D5BCA5009D1566 /* LoadCreditScoreUseCaseProtocol.swift */,
+			);
+			path = Abstraction;
 			sourceTree = "<group>";
 		};
 		C658062D22D4F36300DB4AE3 = {
@@ -263,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				C61E809222D5BBDC009D1566 /* Model */,
+				C61E809522D5BC6E009D1566 /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -494,14 +525,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C658066522D4F52000DB4AE3 /* Constants.swift in Sources */,
+				C61E809A22D5BCA5009D1566 /* LoadCreditScoreUseCaseProtocol.swift in Sources */,
 				C61E809122D5B8AD009D1566 /* CreditScoreMapper.swift in Sources */,
 				C61E808622D5B71F009D1566 /* RemoteDataSource.swift in Sources */,
 				C61E808822D5B745009D1566 /* RemoteDataSourceProtocol.swift in Sources */,
+				C61E809E22D5BE2F009D1566 /* NetworkProvider.swift in Sources */,
 				C61E808122D5B551009D1566 /* Print.swift in Sources */,
 				C658067122D4F76F00DB4AE3 /* CreditValuesEntity.swift in Sources */,
+				C61E809C22D5BE0E009D1566 /* BaseUseCase.swift in Sources */,
 				C658066E22D4F6C600DB4AE3 /* ApiClientProtocol.swift in Sources */,
 				C61E809422D5BBE9009D1566 /* CreditScore.swift in Sources */,
 				C61E807C22D5B4F6009D1566 /* CreditReportInfoEntity.swift in Sources */,
+				C61E809722D5BC96009D1566 /* LoadCreditScoreUseCase.swift in Sources */,
+				C61E80A022D5BE58009D1566 /* NetworkProviderProtocol.swift in Sources */,
 				C658063C22D4F36300DB4AE3 /* ViewController.swift in Sources */,
 				C61E808E22D5B803009D1566 /* CreditScoreProviderProtocol.swift in Sources */,
 				C61E808C22D5B7F8009D1566 /* CreditScoreProvider.swift in Sources */,
