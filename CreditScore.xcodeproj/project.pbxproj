@@ -11,6 +11,8 @@
 		C61E807C22D5B4F6009D1566 /* CreditReportInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E807B22D5B4F6009D1566 /* CreditReportInfoEntity.swift */; };
 		C61E807E22D5B508009D1566 /* CoachingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E807D22D5B508009D1566 /* CoachingSummary.swift */; };
 		C61E808122D5B551009D1566 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808022D5B551009D1566 /* Print.swift */; };
+		C61E808622D5B71F009D1566 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808522D5B71F009D1566 /* RemoteDataSource.swift */; };
+		C61E808822D5B745009D1566 /* RemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808722D5B745009D1566 /* RemoteDataSourceProtocol.swift */; };
 		C658063A22D4F36300DB4AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063922D4F36300DB4AE3 /* AppDelegate.swift */; };
 		C658063C22D4F36300DB4AE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063B22D4F36300DB4AE3 /* ViewController.swift */; };
 		C658063F22D4F36300DB4AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C658063D22D4F36300DB4AE3 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		C61E807B22D5B4F6009D1566 /* CreditReportInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportInfoEntity.swift; sourceTree = "<group>"; };
 		C61E807D22D5B508009D1566 /* CoachingSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingSummary.swift; sourceTree = "<group>"; };
 		C61E808022D5B551009D1566 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		C61E808522D5B71F009D1566 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		C61E808722D5B745009D1566 /* RemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
 		C658063622D4F36300DB4AE3 /* CreditScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C658063922D4F36300DB4AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C658063B22D4F36300DB4AE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,23 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
+		C61E808322D5B6FB009D1566 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				C61E808422D5B712009D1566 /* Abstraction */,
+				C61E808522D5B71F009D1566 /* RemoteDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		C61E808422D5B712009D1566 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				C61E808722D5B745009D1566 /* RemoteDataSourceProtocol.swift */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
 		C658062D22D4F36300DB4AE3 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +209,7 @@
 		C658065B22D4F3D200DB4AE3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C61E808322D5B6FB009D1566 /* DataSource */,
 				C61E808222D5B66E009D1566 /* Client */,
 				C658066F22D4F76600DB4AE3 /* Entity */,
 			);
@@ -428,6 +450,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C658066522D4F52000DB4AE3 /* Constants.swift in Sources */,
+				C61E808622D5B71F009D1566 /* RemoteDataSource.swift in Sources */,
+				C61E808822D5B745009D1566 /* RemoteDataSourceProtocol.swift in Sources */,
 				C61E808122D5B551009D1566 /* Print.swift in Sources */,
 				C658067122D4F76F00DB4AE3 /* CreditValuesEntity.swift in Sources */,
 				C658066E22D4F6C600DB4AE3 /* ApiClientProtocol.swift in Sources */,
