@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C6110D20BCB3EC50CFB6BFA5 /* Pods_CreditScoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA51D993D06AA68D0520406 /* Pods_CreditScoreTests.framework */; };
+		C61E807C22D5B4F6009D1566 /* CreditReportInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E807B22D5B4F6009D1566 /* CreditReportInfoEntity.swift */; };
+		C61E807E22D5B508009D1566 /* CoachingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E807D22D5B508009D1566 /* CoachingSummary.swift */; };
+		C61E808122D5B551009D1566 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808022D5B551009D1566 /* Print.swift */; };
 		C658063A22D4F36300DB4AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063922D4F36300DB4AE3 /* AppDelegate.swift */; };
 		C658063C22D4F36300DB4AE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063B22D4F36300DB4AE3 /* ViewController.swift */; };
 		C658063F22D4F36300DB4AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C658063D22D4F36300DB4AE3 /* Main.storyboard */; };
 		C658064122D4F36400DB4AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C658064022D4F36400DB4AE3 /* Assets.xcassets */; };
 		C658064422D4F36400DB4AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C658064222D4F36400DB4AE3 /* LaunchScreen.storyboard */; };
 		C658064F22D4F36400DB4AE3 /* CreditScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658064E22D4F36400DB4AE3 /* CreditScoreTests.swift */; };
+		C658065F22D4F4A400DB4AE3 /* BaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658065E22D4F4A400DB4AE3 /* BaseClient.swift */; };
+		C658066222D4F4C900DB4AE3 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658066122D4F4C900DB4AE3 /* APIEndpoint.swift */; };
+		C658066522D4F52000DB4AE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658066422D4F52000DB4AE3 /* Constants.swift */; };
+		C658066722D4F56800DB4AE3 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658066622D4F56800DB4AE3 /* APIResponse.swift */; };
+		C658066922D4F57F00DB4AE3 /* APIException.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658066822D4F57F00DB4AE3 /* APIException.swift */; };
+		C658066B22D4F69A00DB4AE3 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658066A22D4F69A00DB4AE3 /* ApiClient.swift */; };
+		C658066E22D4F6C600DB4AE3 /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658066D22D4F6C600DB4AE3 /* ApiClientProtocol.swift */; };
+		C658067122D4F76F00DB4AE3 /* CreditValuesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658067022D4F76F00DB4AE3 /* CreditValuesEntity.swift */; };
+		C658067422D4F7AD00DB4AE3 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658067322D4F7AD00DB4AE3 /* Decoder.swift */; };
 		CF9B3219B98983AFEC761493 /* Pods_CreditScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1362A5FEFC3A4CE66DDE68 /* Pods_CreditScore.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +45,9 @@
 		5D0DD85CFB5DCCF7B5A4ADBE /* Pods-CreditScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScore.debug.xcconfig"; path = "Target Support Files/Pods-CreditScore/Pods-CreditScore.debug.xcconfig"; sourceTree = "<group>"; };
 		6C274F4C34479C7BB235AF9F /* Pods-CreditScoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScoreTests.debug.xcconfig"; path = "Target Support Files/Pods-CreditScoreTests/Pods-CreditScoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1362A5FEFC3A4CE66DDE68 /* Pods_CreditScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61E807B22D5B4F6009D1566 /* CreditReportInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportInfoEntity.swift; sourceTree = "<group>"; };
+		C61E807D22D5B508009D1566 /* CoachingSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingSummary.swift; sourceTree = "<group>"; };
+		C61E808022D5B551009D1566 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
 		C658063622D4F36300DB4AE3 /* CreditScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C658063922D4F36300DB4AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C658063B22D4F36300DB4AE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +58,15 @@
 		C658064A22D4F36400DB4AE3 /* CreditScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C658064E22D4F36400DB4AE3 /* CreditScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreTests.swift; sourceTree = "<group>"; };
 		C658065022D4F36400DB4AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C658065E22D4F4A400DB4AE3 /* BaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClient.swift; sourceTree = "<group>"; };
+		C658066122D4F4C900DB4AE3 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		C658066422D4F52000DB4AE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C658066622D4F56800DB4AE3 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		C658066822D4F57F00DB4AE3 /* APIException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIException.swift; sourceTree = "<group>"; };
+		C658066A22D4F69A00DB4AE3 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		C658066D22D4F6C600DB4AE3 /* ApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
+		C658067022D4F76F00DB4AE3 /* CreditValuesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditValuesEntity.swift; sourceTree = "<group>"; };
+		C658067322D4F7AD00DB4AE3 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		EC8A9209CA72FF82A45ECE70 /* Pods-CreditScoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScoreTests.release.xcconfig"; path = "Target Support Files/Pods-CreditScoreTests/Pods-CreditScoreTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,8 +107,27 @@
 				6C274F4C34479C7BB235AF9F /* Pods-CreditScoreTests.debug.xcconfig */,
 				EC8A9209CA72FF82A45ECE70 /* Pods-CreditScoreTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C61E807F22D5B53F009D1566 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				C61E808022D5B551009D1566 /* Print.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		C61E808222D5B66E009D1566 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				C658066C22D4F6BE00DB4AE3 /* Abstraction */,
+				C658066022D4F4C200DB4AE3 /* Poso */,
+				C658067222D4F7A600DB4AE3 /* Decoder */,
+				C658065E22D4F4A400DB4AE3 /* BaseClient.swift */,
+				C658066A22D4F69A00DB4AE3 /* ApiClient.swift */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 		C658062D22D4F36300DB4AE3 = {
@@ -136,6 +179,8 @@
 		C658065A22D4F3B900DB4AE3 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				C61E807F22D5B53F009D1566 /* Global */,
+				C658066322D4F51600DB4AE3 /* Constants */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -143,6 +188,8 @@
 		C658065B22D4F3D200DB4AE3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C61E808222D5B66E009D1566 /* Client */,
+				C658066F22D4F76600DB4AE3 /* Entity */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -159,6 +206,50 @@
 			children = (
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C658066022D4F4C200DB4AE3 /* Poso */ = {
+			isa = PBXGroup;
+			children = (
+				C658066122D4F4C900DB4AE3 /* APIEndpoint.swift */,
+				C658066622D4F56800DB4AE3 /* APIResponse.swift */,
+				C658066822D4F57F00DB4AE3 /* APIException.swift */,
+			);
+			path = Poso;
+			sourceTree = "<group>";
+		};
+		C658066322D4F51600DB4AE3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C658066422D4F52000DB4AE3 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C658066C22D4F6BE00DB4AE3 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				C658066D22D4F6C600DB4AE3 /* ApiClientProtocol.swift */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		C658066F22D4F76600DB4AE3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C658067022D4F76F00DB4AE3 /* CreditValuesEntity.swift */,
+				C61E807B22D5B4F6009D1566 /* CreditReportInfoEntity.swift */,
+				C61E807D22D5B508009D1566 /* CoachingSummary.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C658067222D4F7A600DB4AE3 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				C658067322D4F7AD00DB4AE3 /* Decoder.swift */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,8 +427,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C658066522D4F52000DB4AE3 /* Constants.swift in Sources */,
+				C61E808122D5B551009D1566 /* Print.swift in Sources */,
+				C658067122D4F76F00DB4AE3 /* CreditValuesEntity.swift in Sources */,
+				C658066E22D4F6C600DB4AE3 /* ApiClientProtocol.swift in Sources */,
+				C61E807C22D5B4F6009D1566 /* CreditReportInfoEntity.swift in Sources */,
 				C658063C22D4F36300DB4AE3 /* ViewController.swift in Sources */,
+				C658065F22D4F4A400DB4AE3 /* BaseClient.swift in Sources */,
+				C658066B22D4F69A00DB4AE3 /* ApiClient.swift in Sources */,
+				C61E807E22D5B508009D1566 /* CoachingSummary.swift in Sources */,
 				C658063A22D4F36300DB4AE3 /* AppDelegate.swift in Sources */,
+				C658067422D4F7AD00DB4AE3 /* Decoder.swift in Sources */,
+				C658066922D4F57F00DB4AE3 /* APIException.swift in Sources */,
+				C658066222D4F4C900DB4AE3 /* APIEndpoint.swift in Sources */,
+				C658066722D4F56800DB4AE3 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
