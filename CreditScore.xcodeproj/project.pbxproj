@@ -13,6 +13,10 @@
 		C61E808122D5B551009D1566 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808022D5B551009D1566 /* Print.swift */; };
 		C61E808622D5B71F009D1566 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808522D5B71F009D1566 /* RemoteDataSource.swift */; };
 		C61E808822D5B745009D1566 /* RemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808722D5B745009D1566 /* RemoteDataSourceProtocol.swift */; };
+		C61E808C22D5B7F8009D1566 /* CreditScoreProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808B22D5B7F8009D1566 /* CreditScoreProvider.swift */; };
+		C61E808E22D5B803009D1566 /* CreditScoreProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E808D22D5B803009D1566 /* CreditScoreProviderProtocol.swift */; };
+		C61E809122D5B8AD009D1566 /* CreditScoreMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809022D5B8AD009D1566 /* CreditScoreMapper.swift */; };
+		C61E809422D5BBE9009D1566 /* CreditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809322D5BBE9009D1566 /* CreditScore.swift */; };
 		C658063A22D4F36300DB4AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063922D4F36300DB4AE3 /* AppDelegate.swift */; };
 		C658063C22D4F36300DB4AE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063B22D4F36300DB4AE3 /* ViewController.swift */; };
 		C658063F22D4F36300DB4AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C658063D22D4F36300DB4AE3 /* Main.storyboard */; };
@@ -52,6 +56,10 @@
 		C61E808022D5B551009D1566 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
 		C61E808522D5B71F009D1566 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		C61E808722D5B745009D1566 /* RemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
+		C61E808B22D5B7F8009D1566 /* CreditScoreProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreProvider.swift; sourceTree = "<group>"; };
+		C61E808D22D5B803009D1566 /* CreditScoreProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreProviderProtocol.swift; sourceTree = "<group>"; };
+		C61E809022D5B8AD009D1566 /* CreditScoreMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreMapper.swift; sourceTree = "<group>"; };
+		C61E809322D5BBE9009D1566 /* CreditScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScore.swift; sourceTree = "<group>"; };
 		C658063622D4F36300DB4AE3 /* CreditScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C658063922D4F36300DB4AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C658063B22D4F36300DB4AE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +159,40 @@
 			path = Abstraction;
 			sourceTree = "<group>";
 		};
+		C61E808922D5B7B9009D1566 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				C61E808A22D5B7BF009D1566 /* Abstraction */,
+				C61E808F22D5B896009D1566 /* Mapper */,
+				C61E808B22D5B7F8009D1566 /* CreditScoreProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		C61E808A22D5B7BF009D1566 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				C61E808D22D5B803009D1566 /* CreditScoreProviderProtocol.swift */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		C61E808F22D5B896009D1566 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				C61E809022D5B8AD009D1566 /* CreditScoreMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		C61E809222D5BBDC009D1566 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C61E809322D5BBE9009D1566 /* CreditScore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C658062D22D4F36300DB4AE3 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +251,7 @@
 		C658065B22D4F3D200DB4AE3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C61E808922D5B7B9009D1566 /* Provider */,
 				C61E808322D5B6FB009D1566 /* DataSource */,
 				C61E808222D5B66E009D1566 /* Client */,
 				C658066F22D4F76600DB4AE3 /* Entity */,
@@ -219,6 +262,7 @@
 		C658065C22D4F3D600DB4AE3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C61E809222D5BBDC009D1566 /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -450,13 +494,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C658066522D4F52000DB4AE3 /* Constants.swift in Sources */,
+				C61E809122D5B8AD009D1566 /* CreditScoreMapper.swift in Sources */,
 				C61E808622D5B71F009D1566 /* RemoteDataSource.swift in Sources */,
 				C61E808822D5B745009D1566 /* RemoteDataSourceProtocol.swift in Sources */,
 				C61E808122D5B551009D1566 /* Print.swift in Sources */,
 				C658067122D4F76F00DB4AE3 /* CreditValuesEntity.swift in Sources */,
 				C658066E22D4F6C600DB4AE3 /* ApiClientProtocol.swift in Sources */,
+				C61E809422D5BBE9009D1566 /* CreditScore.swift in Sources */,
 				C61E807C22D5B4F6009D1566 /* CreditReportInfoEntity.swift in Sources */,
 				C658063C22D4F36300DB4AE3 /* ViewController.swift in Sources */,
+				C61E808E22D5B803009D1566 /* CreditScoreProviderProtocol.swift in Sources */,
+				C61E808C22D5B7F8009D1566 /* CreditScoreProvider.swift in Sources */,
 				C658065F22D4F4A400DB4AE3 /* BaseClient.swift in Sources */,
 				C658066B22D4F69A00DB4AE3 /* ApiClient.swift in Sources */,
 				C61E807E22D5B508009D1566 /* CoachingSummary.swift in Sources */,
