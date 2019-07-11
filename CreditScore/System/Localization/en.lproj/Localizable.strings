@@ -1,0 +1,4 @@
+// MARK: Credit score screen
+
+"creditScore_yourCreditScoreIs" = "Your credit score is";
+"creditScore_outOf" = "out of %s";

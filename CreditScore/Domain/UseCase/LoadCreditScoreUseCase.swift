@@ -13,7 +13,7 @@ final class LoadCreditScoreUseCase: BaseUseCase {
     
     // MARK: Public variables
     
-    var creditScoreProvider: CreditScoreProvider?
+    var creditScoreProvider: CreditScoreProviderProtocol?
 }
 
 // MARK: - LoadCreditScoreUseCaseProtocol protocol conformance

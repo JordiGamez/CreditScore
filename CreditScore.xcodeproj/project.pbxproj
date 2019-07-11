@@ -22,8 +22,23 @@
 		C61E809C22D5BE0E009D1566 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809B22D5BE0E009D1566 /* BaseUseCase.swift */; };
 		C61E809E22D5BE2F009D1566 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809D22D5BE2F009D1566 /* NetworkProvider.swift */; };
 		C61E80A022D5BE58009D1566 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E809F22D5BE58009D1566 /* NetworkProviderProtocol.swift */; };
+		C61E80A722D5C081009D1566 /* CreditScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80A622D5C081009D1566 /* CreditScoreViewController.swift */; };
+		C61E80AB22D5C0D7009D1566 /* CreditScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80AA22D5C0D7009D1566 /* CreditScoreView.swift */; };
+		C61E80AD22D5C0DE009D1566 /* CreditScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61E80AC22D5C0DE009D1566 /* CreditScoreView.xib */; };
+		C61E80AF22D5C0F6009D1566 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80AE22D5C0F6009D1566 /* BaseView.swift */; };
+		C61E80B322D5C19B009D1566 /* CreditScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C61E80B222D5C19B009D1566 /* CreditScoreViewController.xib */; };
+		C61E80B622D5C1D8009D1566 /* CreditScoreViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80B522D5C1D8009D1566 /* CreditScoreViewControllerProtocol.swift */; };
+		C61E80B822D5C1F5009D1566 /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80B722D5C1F5009D1566 /* BaseViewControllerProtocol.swift */; };
+		C61E80BB22D5C295009D1566 /* CreditScorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80BA22D5C295009D1566 /* CreditScorePresenter.swift */; };
+		C61E80BD22D5C29B009D1566 /* CreditScorePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80BC22D5C29B009D1566 /* CreditScorePresenterProtocol.swift */; };
+		C61E80BF22D5C2B1009D1566 /* BasePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80BE22D5C2B1009D1566 /* BasePresenterProtocol.swift */; };
+		C63CCD4D22D707EB00E62EA5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C63CCD4F22D707EB00E62EA5 /* Localizable.strings */; };
+		C63CCD5122D7085F00E62EA5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */; };
+		C64F189322D6524600AEE281 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F189222D6524600AEE281 /* CircleView.swift */; };
+		C64F189622D6528000AEE281 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F189522D6528000AEE281 /* CGFloatExtensions.swift */; };
+		C64F189922D653CA00AEE281 /* DependencyInjectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F189822D653CA00AEE281 /* DependencyInjectionManager.swift */; };
+		C64F189C22D654F200AEE281 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F189B22D654F200AEE281 /* BaseViewController.swift */; };
 		C658063A22D4F36300DB4AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063922D4F36300DB4AE3 /* AppDelegate.swift */; };
-		C658063C22D4F36300DB4AE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658063B22D4F36300DB4AE3 /* ViewController.swift */; };
 		C658063F22D4F36300DB4AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C658063D22D4F36300DB4AE3 /* Main.storyboard */; };
 		C658064122D4F36400DB4AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C658064022D4F36400DB4AE3 /* Assets.xcassets */; };
 		C658064422D4F36400DB4AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C658064222D4F36400DB4AE3 /* LaunchScreen.storyboard */; };
@@ -70,9 +85,24 @@
 		C61E809B22D5BE0E009D1566 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
 		C61E809D22D5BE2F009D1566 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		C61E809F22D5BE58009D1566 /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
+		C61E80A622D5C081009D1566 /* CreditScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreViewController.swift; sourceTree = "<group>"; };
+		C61E80AA22D5C0D7009D1566 /* CreditScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreView.swift; sourceTree = "<group>"; };
+		C61E80AC22D5C0DE009D1566 /* CreditScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditScoreView.xib; sourceTree = "<group>"; };
+		C61E80AE22D5C0F6009D1566 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C61E80B222D5C19B009D1566 /* CreditScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditScoreViewController.xib; sourceTree = "<group>"; };
+		C61E80B522D5C1D8009D1566 /* CreditScoreViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreViewControllerProtocol.swift; sourceTree = "<group>"; };
+		C61E80B722D5C1F5009D1566 /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
+		C61E80BA22D5C295009D1566 /* CreditScorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScorePresenter.swift; sourceTree = "<group>"; };
+		C61E80BC22D5C29B009D1566 /* CreditScorePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScorePresenterProtocol.swift; sourceTree = "<group>"; };
+		C61E80BE22D5C2B1009D1566 /* BasePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocol.swift; sourceTree = "<group>"; };
+		C63CCD4E22D707EB00E62EA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C64F189222D6524600AEE281 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		C64F189522D6528000AEE281 /* CGFloatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
+		C64F189822D653CA00AEE281 /* DependencyInjectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionManager.swift; sourceTree = "<group>"; };
+		C64F189B22D654F200AEE281 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C658063622D4F36300DB4AE3 /* CreditScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C658063922D4F36300DB4AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C658063B22D4F36300DB4AE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C658063E22D4F36300DB4AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C658064022D4F36400DB4AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C658064322D4F36400DB4AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -223,6 +253,134 @@
 			path = Abstraction;
 			sourceTree = "<group>";
 		};
+		C61E80A122D5BEFC009D1566 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C61E80A222D5BF03009D1566 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C61E80B922D5C287009D1566 /* Abstraction */,
+				C61E80BA22D5C295009D1566 /* CreditScorePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C61E80A322D5BF0B009D1566 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C61E80B122D5C18B009D1566 /* Controller */,
+				C61E80B022D5C181009D1566 /* Xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C61E80A422D5BF14009D1566 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C61E80A922D5C0C9009D1566 /* View */,
+				C61E80A822D5C0BA009D1566 /* Xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C61E80A522D5BF85009D1566 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C64F189222D6524600AEE281 /* CircleView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C61E80A822D5C0BA009D1566 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				C61E80AC22D5C0DE009D1566 /* CreditScoreView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		C61E80A922D5C0C9009D1566 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C61E80AE22D5C0F6009D1566 /* BaseView.swift */,
+				C61E80AA22D5C0D7009D1566 /* CreditScoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C61E80B022D5C181009D1566 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				C61E80B222D5C19B009D1566 /* CreditScoreViewController.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		C61E80B122D5C18B009D1566 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C61E80B422D5C1B7009D1566 /* Abstraction */,
+				C64F189B22D654F200AEE281 /* BaseViewController.swift */,
+				C61E80A622D5C081009D1566 /* CreditScoreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C61E80B422D5C1B7009D1566 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				C61E80B722D5C1F5009D1566 /* BaseViewControllerProtocol.swift */,
+				C61E80B522D5C1D8009D1566 /* CreditScoreViewControllerProtocol.swift */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		C61E80B922D5C287009D1566 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				C61E80BE22D5C2B1009D1566 /* BasePresenterProtocol.swift */,
+				C61E80BC22D5C29B009D1566 /* CreditScorePresenterProtocol.swift */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		C63CCD4A22D707A500E62EA5 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				C63CCD4F22D707EB00E62EA5 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		C64F189422D6526900AEE281 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C64F189522D6528000AEE281 /* CGFloatExtensions.swift */,
+				C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C64F189722D653B500AEE281 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				C64F189822D653CA00AEE281 /* DependencyInjectionManager.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		C64F189A22D654C100AEE281 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C658063922D4F36300DB4AE3 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		C658062D22D4F36300DB4AE3 = {
 			isa = PBXGroup;
 			children = (
@@ -250,8 +408,6 @@
 				C658065C22D4F3D600DB4AE3 /* Domain */,
 				C658065B22D4F3D200DB4AE3 /* Data */,
 				C658065A22D4F3B900DB4AE3 /* System */,
-				C658063922D4F36300DB4AE3 /* AppDelegate.swift */,
-				C658063B22D4F36300DB4AE3 /* ViewController.swift */,
 				C658063D22D4F36300DB4AE3 /* Main.storyboard */,
 				C658064222D4F36400DB4AE3 /* LaunchScreen.storyboard */,
 				C658064022D4F36400DB4AE3 /* Assets.xcassets */,
@@ -272,8 +428,13 @@
 		C658065A22D4F3B900DB4AE3 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				C63CCD4A22D707A500E62EA5 /* Localization */,
+				C64F189A22D654C100AEE281 /* AppDelegate */,
+				C64F189722D653B500AEE281 /* DependencyInjection */,
+				C61E80A522D5BF85009D1566 /* UI */,
 				C61E807F22D5B53F009D1566 /* Global */,
 				C658066322D4F51600DB4AE3 /* Constants */,
+				C64F189422D6526900AEE281 /* Extensions */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -301,6 +462,10 @@
 		C658065D22D4F3DA00DB4AE3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C61E80A422D5BF14009D1566 /* UI */,
+				C61E80A322D5BF0B009D1566 /* ViewController */,
+				C61E80A222D5BF03009D1566 /* Presenter */,
+				C61E80A122D5BEFC009D1566 /* Router */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -433,8 +598,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61E80B322D5C19B009D1566 /* CreditScoreViewController.xib in Resources */,
+				C63CCD4D22D707EB00E62EA5 /* Localizable.strings in Resources */,
 				C658064422D4F36400DB4AE3 /* LaunchScreen.storyboard in Resources */,
 				C658064122D4F36400DB4AE3 /* Assets.xcassets in Resources */,
+				C61E80AD22D5C0DE009D1566 /* CreditScoreView.xib in Resources */,
 				C658063F22D4F36300DB4AE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +650,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-CreditScore/Pods-CreditScore-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -489,6 +658,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -529,26 +699,38 @@
 				C61E809122D5B8AD009D1566 /* CreditScoreMapper.swift in Sources */,
 				C61E808622D5B71F009D1566 /* RemoteDataSource.swift in Sources */,
 				C61E808822D5B745009D1566 /* RemoteDataSourceProtocol.swift in Sources */,
+				C64F189C22D654F200AEE281 /* BaseViewController.swift in Sources */,
+				C64F189922D653CA00AEE281 /* DependencyInjectionManager.swift in Sources */,
 				C61E809E22D5BE2F009D1566 /* NetworkProvider.swift in Sources */,
 				C61E808122D5B551009D1566 /* Print.swift in Sources */,
 				C658067122D4F76F00DB4AE3 /* CreditValuesEntity.swift in Sources */,
 				C61E809C22D5BE0E009D1566 /* BaseUseCase.swift in Sources */,
+				C61E80AB22D5C0D7009D1566 /* CreditScoreView.swift in Sources */,
 				C658066E22D4F6C600DB4AE3 /* ApiClientProtocol.swift in Sources */,
+				C61E80AF22D5C0F6009D1566 /* BaseView.swift in Sources */,
 				C61E809422D5BBE9009D1566 /* CreditScore.swift in Sources */,
 				C61E807C22D5B4F6009D1566 /* CreditReportInfoEntity.swift in Sources */,
 				C61E809722D5BC96009D1566 /* LoadCreditScoreUseCase.swift in Sources */,
 				C61E80A022D5BE58009D1566 /* NetworkProviderProtocol.swift in Sources */,
-				C658063C22D4F36300DB4AE3 /* ViewController.swift in Sources */,
+				C61E80B822D5C1F5009D1566 /* BaseViewControllerProtocol.swift in Sources */,
 				C61E808E22D5B803009D1566 /* CreditScoreProviderProtocol.swift in Sources */,
+				C63CCD5122D7085F00E62EA5 /* StringExtensions.swift in Sources */,
+				C61E80BF22D5C2B1009D1566 /* BasePresenterProtocol.swift in Sources */,
 				C61E808C22D5B7F8009D1566 /* CreditScoreProvider.swift in Sources */,
 				C658065F22D4F4A400DB4AE3 /* BaseClient.swift in Sources */,
 				C658066B22D4F69A00DB4AE3 /* ApiClient.swift in Sources */,
+				C61E80BD22D5C29B009D1566 /* CreditScorePresenterProtocol.swift in Sources */,
 				C61E807E22D5B508009D1566 /* CoachingSummary.swift in Sources */,
+				C61E80A722D5C081009D1566 /* CreditScoreViewController.swift in Sources */,
 				C658063A22D4F36300DB4AE3 /* AppDelegate.swift in Sources */,
 				C658067422D4F7AD00DB4AE3 /* Decoder.swift in Sources */,
+				C64F189322D6524600AEE281 /* CircleView.swift in Sources */,
+				C61E80B622D5C1D8009D1566 /* CreditScoreViewControllerProtocol.swift in Sources */,
 				C658066922D4F57F00DB4AE3 /* APIException.swift in Sources */,
 				C658066222D4F4C900DB4AE3 /* APIEndpoint.swift in Sources */,
 				C658066722D4F56800DB4AE3 /* APIResponse.swift in Sources */,
+				C61E80BB22D5C295009D1566 /* CreditScorePresenter.swift in Sources */,
+				C64F189622D6528000AEE281 /* CGFloatExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +753,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C63CCD4F22D707EB00E62EA5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C63CCD4E22D707EB00E62EA5 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C658063D22D4F36300DB4AE3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

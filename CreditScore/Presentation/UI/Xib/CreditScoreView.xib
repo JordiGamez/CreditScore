@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditScoreView" customModule="CreditScore" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="NlP-IM-8Js"/>
+                <outlet property="creditScoreLabel" destination="iUf-2B-Wio" id="S7B-0n-9Mf"/>
+                <outlet property="creditScoreValueLabel" destination="dod-Mr-GCE" id="Msk-WS-m92"/>
+                <outlet property="outOfLabel" destination="ZUN-NV-Czn" id="b4v-OV-OMY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUf-2B-Wio">
+                    <rect key="frame" x="190.5" y="404" width="33" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dod-Mr-GCE">
+                    <rect key="frame" x="147" y="420" width="120.5" height="66"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="55"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUN-NV-Czn">
+                    <rect key="frame" x="190.5" y="486" width="33" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dod-Mr-GCE" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ChB-HR-FTN"/>
+                <constraint firstItem="ZUN-NV-Czn" firstAttribute="top" secondItem="dod-Mr-GCE" secondAttribute="bottom" id="ORS-pz-2cw"/>
+                <constraint firstItem="iUf-2B-Wio" firstAttribute="centerX" secondItem="dod-Mr-GCE" secondAttribute="centerX" id="sHU-F8-KgB"/>
+                <constraint firstItem="ZUN-NV-Czn" firstAttribute="centerX" secondItem="dod-Mr-GCE" secondAttribute="centerX" id="xz0-wk-JLb"/>
+                <constraint firstItem="dod-Mr-GCE" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="y6c-uO-b8w"/>
+                <constraint firstItem="dod-Mr-GCE" firstAttribute="top" secondItem="iUf-2B-Wio" secondAttribute="bottom" id="zLr-BK-Wgq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

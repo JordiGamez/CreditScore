@@ -15,14 +15,15 @@ enum Constants {
         enum Host {
             
             enum Api {
-                static let pro  = "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/"
+                static let pro
+                    = "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com"
             }
         }
         
         enum Api {
             
             enum Api {
-                static let api  = "prod/mockcredit/"
+                static let api = "prod/mockcredit"
             }
         }
     }

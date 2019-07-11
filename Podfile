@@ -9,6 +9,7 @@ use_frameworks!
 
 pod 'Alamofire'
 pod 'Alamofire-Synchronous'
+pod 'Swinject'
 
 target 'CreditScoreTests' do
 inherit! :search_paths
