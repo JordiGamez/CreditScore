@@ -27,6 +27,9 @@ protocol CreditScoreViewControllerProtocol: BaseViewControllerProtocol {
     /// Show error
     func showError()
     
+    /// Show network error
+    func showNetworkError()
+    
     /// Hide error
     func hideError()
 }

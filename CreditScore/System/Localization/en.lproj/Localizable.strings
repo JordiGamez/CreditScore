@@ -1,6 +1,6 @@
 // MARK: General
 
-"retry" = "Retry";
+"tryAgain" = "Try again";
 
 // MARK: Credit score screen
 
@@ -8,3 +8,8 @@
 "creditScore_yourCreditScoreIs" = "Your credit score is";
 "creditScore_outOf" = "out of %s";
 "creditScore_calculating" = "Calculating credit score";
+
+// MARK: Error
+
+"genericError" = "There was an error loading the data";
+"networkError" = "There was an error with your connection";

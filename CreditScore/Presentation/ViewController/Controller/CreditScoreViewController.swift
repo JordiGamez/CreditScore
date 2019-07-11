@@ -36,7 +36,7 @@ class CreditScoreViewController: BaseViewController {
     @IBOutlet weak var retryButton: UIButton! {
         didSet {
             retryButton.isHidden = true
-            retryButton.setTitle("retry".localize(), for: .normal)
+            retryButton.setTitle("tryAgain".localize(), for: .normal)
             retryButton.titleLabel?.font = .boldSystemFont(ofSize: 16)
             retryButton.tintColor = .white
             retryButton.backgroundColor = .black
@@ -71,8 +71,15 @@ class CreditScoreViewController: BaseViewController {
         presenter?.bind(view: self)
     }
     
+    /// Display UI error
+    private func displayUIError() {
+        errorView.isHidden = false
+        retryButton.isHidden = false
+    }
+    
     // MARK: Actions
     
+    /// Retry load credit score
     @objc private func retryCreditScore() {
         presenter?.retryLoadCreditScore()
     }
@@ -112,8 +119,14 @@ extension CreditScoreViewController: CreditScoreViewControllerProtocol {
     
     /// Show error
     func showError() {
-        errorView.isHidden = false
-        retryButton.isHidden = false
+        errorView.exception = .unknownException
+        displayUIError()
+    }
+    
+    /// Show network error
+    func showNetworkError() {
+        errorView.exception = .connectivityException
+        displayUIError()
     }
     
     /// Hide error

@@ -46,9 +46,20 @@ final class CreditScorePresenter {
                         }
                     }
                 }
-            } catch {
-                self.loadCreditScoreUseCaseInProgress = false
-                DispatchQueue.main.async { self.view?.showError() }
+            } catch let exception {
+                if let apiException = exception as? APIException {
+                    self.loadCreditScoreUseCaseInProgress = false
+                    switch apiException {
+                    case .connectivityException:
+                        DispatchQueue.main.async {
+                            self.view?.showNetworkError()
+                        }
+                    case .unknownException:
+                        DispatchQueue.main.async {
+                            self.view?.showError()
+                        }
+                    }
+                }
             }
         }
     }

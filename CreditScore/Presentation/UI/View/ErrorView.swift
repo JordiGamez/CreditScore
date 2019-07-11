@@ -13,15 +13,24 @@ final class ErrorView: BaseView {
     
     // MARK: @IBOutlets
     
-    @IBOutlet private weak var messageLabel: UILabel! {
-        didSet {
-            messageLabel.text = "Error"
-        }
-    }
+    @IBOutlet private weak var messageLabel: UILabel!
     
     // MARK: Private constants
     
     private let customBackgroundColor: UIColor = .clear
+    
+    // MARK: Public variable
+    
+    var exception: APIException = .unknownException {
+        didSet {
+            switch exception {
+            case .connectivityException:
+                messageLabel.text = "networkError".localize()
+            case .unknownException:
+                messageLabel.text = "genericError".localize()
+            }
+        }
+    }
     
     // MARK: Overriden methods
     

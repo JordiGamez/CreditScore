@@ -48,6 +48,7 @@ final class CreditScoreView: BaseView {
     private var maxScoreValue = 0
     private var currentScoreValue = 0
     private var scoreValue = 0
+    private var innerCircleView: CircleView!
     
     // MARK: Public variables
     
@@ -156,7 +157,7 @@ final class CreditScoreView: BaseView {
     
     /// Draw inner circle
     private func drawInnerCircle() {
-        let circleView = CircleView(
+        innerCircleView = CircleView(
             frame: CGRect(
                 x: frame.size.width / 2 - outterCircleWidth / 2,
                 y: frame.size.height / 2 - outterCircleHeight / 2,
@@ -167,10 +168,10 @@ final class CreditScoreView: BaseView {
             percentageToDraw: CGFloat(circleCompleteDegrees * currentScoreValue
                 / maxScoreValue))
         
-        addSubview(circleView)
+        addSubview(innerCircleView)
         
         // Display circle with animation
-        circleView.animateCircle(duration: drawCircleAnimationDuration)
+        innerCircleView.animateCircle(duration: drawCircleAnimationDuration)
     }
     
     /// Hide previous score
