@@ -48,18 +48,6 @@ final class LoadingView: BaseView {
         setBackgroundColor()
     }
     
-    // MARK: Public methods
-    
-    /// Show loading
-    func showLoading() {
-        
-    }
-    
-    /// Hide loading
-    func hideLoading() {
-        
-    }
-    
     // MARK: Private methods
     
     /// Set background color

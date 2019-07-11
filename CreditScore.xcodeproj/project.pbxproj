@@ -34,6 +34,8 @@
 		C61E80BF22D5C2B1009D1566 /* BasePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80BE22D5C2B1009D1566 /* BasePresenterProtocol.swift */; };
 		C63CCD4D22D707EB00E62EA5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C63CCD4F22D707EB00E62EA5 /* Localizable.strings */; };
 		C63CCD5122D7085F00E62EA5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */; };
+		C6481C0D22D7975900DE6DFF /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6481C0C22D7975900DE6DFF /* ErrorView.swift */; };
+		C6481C0F22D7978300DE6DFF /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6481C0E22D7978300DE6DFF /* ErrorView.xib */; };
 		C64F189322D6524600AEE281 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F189222D6524600AEE281 /* CircleView.swift */; };
 		C64F189622D6528000AEE281 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F189522D6528000AEE281 /* CGFloatExtensions.swift */; };
 		C64F189922D653CA00AEE281 /* DependencyInjectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F189822D653CA00AEE281 /* DependencyInjectionManager.swift */; };
@@ -102,6 +104,8 @@
 		C61E80BE22D5C2B1009D1566 /* BasePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocol.swift; sourceTree = "<group>"; };
 		C63CCD4E22D707EB00E62EA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C6481C0C22D7975900DE6DFF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		C6481C0E22D7978300DE6DFF /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		C64F189222D6524600AEE281 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		C64F189522D6528000AEE281 /* CGFloatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
 		C64F189822D653CA00AEE281 /* DependencyInjectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionManager.swift; sourceTree = "<group>"; };
@@ -310,6 +314,7 @@
 			children = (
 				C61E80AC22D5C0DE009D1566 /* CreditScoreView.xib */,
 				C66DD09F22D76B9C0031C15C /* LoadingView.xib */,
+				C6481C0E22D7978300DE6DFF /* ErrorView.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				C61E80AE22D5C0F6009D1566 /* BaseView.swift */,
 				C61E80AA22D5C0D7009D1566 /* CreditScoreView.swift */,
 				C66DD09D22D76B940031C15C /* LoadingView.swift */,
+				C6481C0C22D7975900DE6DFF /* ErrorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -442,14 +448,14 @@
 		C658065A22D4F3B900DB4AE3 /* System */ = {
 			isa = PBXGroup;
 			children = (
-				C66DD09622D763510031C15C /* Colors */,
-				C63CCD4A22D707A500E62EA5 /* Localization */,
 				C64F189A22D654C100AEE281 /* AppDelegate */,
 				C64F189722D653B500AEE281 /* DependencyInjection */,
-				C61E80A522D5BF85009D1566 /* UI */,
+				C63CCD4A22D707A500E62EA5 /* Localization */,
 				C61E807F22D5B53F009D1566 /* Global */,
 				C658066322D4F51600DB4AE3 /* Constants */,
 				C64F189422D6526900AEE281 /* Extensions */,
+				C61E80A522D5BF85009D1566 /* UI */,
+				C66DD09622D763510031C15C /* Colors */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -624,6 +630,7 @@
 				C61E80B322D5C19B009D1566 /* CreditScoreViewController.xib in Resources */,
 				C63CCD4D22D707EB00E62EA5 /* Localizable.strings in Resources */,
 				C658064422D4F36400DB4AE3 /* LaunchScreen.storyboard in Resources */,
+				C6481C0F22D7978300DE6DFF /* ErrorView.xib in Resources */,
 				C658064122D4F36400DB4AE3 /* Assets.xcassets in Resources */,
 				C66DD0A022D76B9C0031C15C /* LoadingView.xib in Resources */,
 				C61E80AD22D5C0DE009D1566 /* CreditScoreView.xib in Resources */,
@@ -743,6 +750,7 @@
 				C61E808C22D5B7F8009D1566 /* CreditScoreProvider.swift in Sources */,
 				C658065F22D4F4A400DB4AE3 /* BaseClient.swift in Sources */,
 				C658066B22D4F69A00DB4AE3 /* ApiClient.swift in Sources */,
+				C6481C0D22D7975900DE6DFF /* ErrorView.swift in Sources */,
 				C61E80BD22D5C29B009D1566 /* CreditScorePresenterProtocol.swift in Sources */,
 				C66DD09E22D76B940031C15C /* LoadingView.swift in Sources */,
 				C61E807E22D5B508009D1566 /* CoachingSummary.swift in Sources */,

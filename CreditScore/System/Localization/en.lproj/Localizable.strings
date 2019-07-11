@@ -1,5 +1,10 @@
+// MARK: General
+
+"retry" = "Retry";
+
 // MARK: Credit score screen
 
+"creditScore_dashboard" = "Dashboard";
 "creditScore_yourCreditScoreIs" = "Your credit score is";
 "creditScore_outOf" = "out of %s";
-"creditScore_dashboard" = "Dashboard";
+"creditScore_calculating" = "Calculating credit score";

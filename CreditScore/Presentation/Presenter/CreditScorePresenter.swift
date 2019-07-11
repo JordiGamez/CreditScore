@@ -32,8 +32,8 @@ final class CreditScorePresenter {
     
     /// Load credit score
     private func loadCreditScore() {
+        self.loadCreditScoreUseCaseInProgress = true
         DispatchQueue.global(qos: .userInitiated).async {
-            self.loadCreditScoreUseCaseInProgress = true
             do {
                 if let result = try self.loadCreditScoreUseCase?.execute() {
                     self.loadCreditScoreUseCaseInProgress = false
@@ -93,6 +93,7 @@ extension CreditScorePresenter: CreditScorePresenterProtocol {
     
     /// Retry load credit score
     func retryLoadCreditScore() {
+        view?.hideError()
         loadCreditScore()
     }
 }
