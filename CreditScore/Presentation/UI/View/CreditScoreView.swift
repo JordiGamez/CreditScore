@@ -81,12 +81,12 @@ final class CreditScoreView: BaseView {
     
     /// Show credit score
     func showCreditScore() {
+        hidePreviousScore()
+        removePreviousCircles()
         if creditScore != nil && maxCreditScore != nil {
             startTimerToUpdateCurrentScoreValue()
             drawOutterCircle()
-            showCreditScoreLabel()
-            showCreditScoreValueLabel()
-            showOutOfLabel()
+            showCurrentScore()
             drawInnerCircle()
         }
     }
@@ -106,7 +106,6 @@ final class CreditScoreView: BaseView {
     /// Hide credit score label
     private func hideCreditScoreLabel() {
         creditScoreLabel.isHidden = true
-        creditScoreLabel.text = ""
     }
     
     /// Show credit score value label
@@ -117,7 +116,6 @@ final class CreditScoreView: BaseView {
     /// Hide credit score value label
     private func hideCreditScoreValueLabel() {
         creditScoreValueLabel.isHidden = true
-        creditScoreValueLabel.text = ""
     }
     
     /// Show out of label
@@ -128,7 +126,6 @@ final class CreditScoreView: BaseView {
     /// Hide out of label
     private func hideOutOfLabel() {
         outOfLabel.isHidden = true
-        outOfLabel.text = ""
     }
     
     /// Start timer to update current score value
@@ -159,7 +156,6 @@ final class CreditScoreView: BaseView {
     
     /// Draw inner circle
     private func drawInnerCircle() {
-        // Create a new CircleView
         let circleView = CircleView(
             frame: CGRect(
                 x: frame.size.width / 2 - outterCircleWidth / 2,
@@ -177,15 +173,42 @@ final class CreditScoreView: BaseView {
         circleView.animateCircle(duration: drawCircleAnimationDuration)
     }
     
+    /// Hide previous score
+    private func hidePreviousScore() {
+        hideCreditScoreLabel()
+        hideCreditScoreValueLabel()
+        hideOutOfLabel()
+    }
+    
+    /// Show current score
+    private func showCurrentScore() {
+        showCreditScoreLabel()
+        showCreditScoreValueLabel()
+        showOutOfLabel()
+    }
+    
+    /// Remove previous circles
+    private func removePreviousCircles() {
+        for subview in subviews {
+            if subview is CircleView {
+                subview.removeFromSuperview()
+            }
+        }
+    }
+    
+    /// Reset values
+    private func resetValues() {
+        timer?.invalidate()
+        timer = nil
+        scoreValue = 0
+    }
+    
     // MARK: Actions
     
     /// Update current score value label
     @objc private func updateCurrentScoreValueLabel() {
         creditScoreValueLabel.text = String(scoreValue)
         scoreValue += 1
-        if scoreValue > currentScoreValue {
-            timer?.invalidate()
-            timer = nil
-        }
+        if scoreValue > currentScoreValue { resetValues() }
     }
 }

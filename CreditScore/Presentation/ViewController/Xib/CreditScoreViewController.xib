@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="creditScoreView" destination="NIK-Eg-Csd" id="9Vd-T0-OVZ"/>
                 <outlet property="navigationBar" destination="Ppt-CO-Glg" id="A1W-MY-HID"/>
+                <outlet property="retryButton" destination="loc-lP-paL" id="Puj-jU-yjH"/>
                 <outlet property="view" destination="iN0-l3-epB" id="HmC-g3-YXn"/>
             </connections>
         </placeholder>
@@ -33,14 +34,25 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <viewLayoutGuide key="safeArea" id="ygU-XF-gwN"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loc-lP-paL">
+                    <rect key="frame" x="8" y="814" width="398" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="fLR-4g-ztP"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Ppt-CO-Glg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3l5-Pn-6bQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="loc-lP-paL" secondAttribute="trailing" constant="8" id="7aF-Cd-cOG"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NIK-Eg-Csd" secondAttribute="trailing" id="7l9-Km-g6m"/>
+                <constraint firstItem="loc-lP-paL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="9UA-MF-lP6"/>
                 <constraint firstItem="NIK-Eg-Csd" firstAttribute="top" secondItem="Ppt-CO-Glg" secondAttribute="bottom" id="CFL-wx-Nm4"/>
                 <constraint firstItem="Ppt-CO-Glg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DZk-Kg-xVy"/>
                 <constraint firstItem="NIK-Eg-Csd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="T7a-ou-Png"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="loc-lP-paL" secondAttribute="bottom" constant="8" id="jnL-X2-uNw"/>
+                <constraint firstItem="loc-lP-paL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="o28-eT-cfA"/>
                 <constraint firstItem="NIK-Eg-Csd" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qD7-rz-k0K"/>
                 <constraint firstItem="Ppt-CO-Glg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="waA-lV-ujJ"/>
             </constraints>

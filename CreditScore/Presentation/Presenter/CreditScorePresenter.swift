@@ -90,4 +90,9 @@ extension CreditScorePresenter: CreditScorePresenterProtocol {
     func bind(view: CreditScoreViewControllerProtocol) {
         self.view = view
     }
+    
+    /// Retry load credit score
+    func retryLoadCreditScore() {
+        loadCreditScore()
+    }
 }

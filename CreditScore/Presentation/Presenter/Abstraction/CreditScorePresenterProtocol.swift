@@ -15,4 +15,7 @@ protocol CreditScorePresenterProtocol: BasePresenterProtocol {
     ///
     /// - Parameter view: CreditScoreViewControllerProtocol object
     func bind(view: CreditScoreViewControllerProtocol)
+    
+    /// Retry load credit score
+    func retryLoadCreditScore()
 }

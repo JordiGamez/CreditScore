@@ -52,6 +52,9 @@
 		C658066E22D4F6C600DB4AE3 /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658066D22D4F6C600DB4AE3 /* ApiClientProtocol.swift */; };
 		C658067122D4F76F00DB4AE3 /* CreditValuesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658067022D4F76F00DB4AE3 /* CreditValuesEntity.swift */; };
 		C658067422D4F7AD00DB4AE3 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658067322D4F7AD00DB4AE3 /* Decoder.swift */; };
+		C66DD09822D763610031C15C /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66DD09722D763610031C15C /* ColorPalette.swift */; };
+		C66DD09A22D7639B0031C15C /* ColorPaletteExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66DD09922D7639B0031C15C /* ColorPaletteExtensions.swift */; };
+		C66DD09C22D763B30031C15C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66DD09B22D763B30031C15C /* UIColorExtensions.swift */; };
 		CF9B3219B98983AFEC761493 /* Pods_CreditScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1362A5FEFC3A4CE66DDE68 /* Pods_CreditScore.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +122,9 @@
 		C658066D22D4F6C600DB4AE3 /* ApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
 		C658067022D4F76F00DB4AE3 /* CreditValuesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditValuesEntity.swift; sourceTree = "<group>"; };
 		C658067322D4F7AD00DB4AE3 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		C66DD09722D763610031C15C /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		C66DD09922D7639B0031C15C /* ColorPaletteExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteExtensions.swift; sourceTree = "<group>"; };
+		C66DD09B22D763B30031C15C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		EC8A9209CA72FF82A45ECE70 /* Pods-CreditScoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScoreTests.release.xcconfig"; path = "Target Support Files/Pods-CreditScoreTests/Pods-CreditScoreTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -361,6 +367,8 @@
 			children = (
 				C64F189522D6528000AEE281 /* CGFloatExtensions.swift */,
 				C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */,
+				C66DD09922D7639B0031C15C /* ColorPaletteExtensions.swift */,
+				C66DD09B22D763B30031C15C /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -428,6 +436,7 @@
 		C658065A22D4F3B900DB4AE3 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				C66DD09622D763510031C15C /* Colors */,
 				C63CCD4A22D707A500E62EA5 /* Localization */,
 				C64F189A22D654C100AEE281 /* AppDelegate */,
 				C64F189722D653B500AEE281 /* DependencyInjection */,
@@ -512,6 +521,14 @@
 				C658067322D4F7AD00DB4AE3 /* Decoder.swift */,
 			);
 			path = Decoder;
+			sourceTree = "<group>";
+		};
+		C66DD09622D763510031C15C /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				C66DD09722D763610031C15C /* ColorPalette.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -725,12 +742,15 @@
 				C658063A22D4F36300DB4AE3 /* AppDelegate.swift in Sources */,
 				C658067422D4F7AD00DB4AE3 /* Decoder.swift in Sources */,
 				C64F189322D6524600AEE281 /* CircleView.swift in Sources */,
+				C66DD09822D763610031C15C /* ColorPalette.swift in Sources */,
 				C61E80B622D5C1D8009D1566 /* CreditScoreViewControllerProtocol.swift in Sources */,
+				C66DD09A22D7639B0031C15C /* ColorPaletteExtensions.swift in Sources */,
 				C658066922D4F57F00DB4AE3 /* APIException.swift in Sources */,
 				C658066222D4F4C900DB4AE3 /* APIEndpoint.swift in Sources */,
 				C658066722D4F56800DB4AE3 /* APIResponse.swift in Sources */,
 				C61E80BB22D5C295009D1566 /* CreditScorePresenter.swift in Sources */,
 				C64F189622D6528000AEE281 /* CGFloatExtensions.swift in Sources */,
+				C66DD09C22D763B30031C15C /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

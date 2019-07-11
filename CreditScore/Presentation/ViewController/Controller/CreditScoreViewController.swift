@@ -18,12 +18,25 @@ class CreditScoreViewController: BaseViewController {
             navigationBar.barTintColor = .black
             navigationBar.isTranslucent = false
             let title = UILabel(frame: .zero)
-            title.text = "Dashboard"
+            title.text = "creditScore_dashboard".localize()
             title.textColor = .white
             navigationBar.topItem?.titleView = title
         }
     }
     @IBOutlet weak var creditScoreView: CreditScoreView!
+    @IBOutlet weak var retryButton: UIButton! {
+        didSet {
+            retryButton.isHidden = true
+            retryButton.setTitle("Retry", for: .normal)
+            retryButton.titleLabel?.font = .boldSystemFont(ofSize: 16)
+            retryButton.tintColor = .white
+            retryButton.backgroundColor = .black
+            retryButton.layer.cornerRadius = 4
+            retryButton.addTarget(self,
+                                  action: #selector(retryCreditScore),
+                                  for: .touchUpInside)
+        }
+    }
     
     // MARK: Public variables
     
@@ -42,6 +55,12 @@ class CreditScoreViewController: BaseViewController {
     /// Bind the view with the presenter
     private func bindPresenter() {
         presenter?.bind(view: self)
+    }
+    
+    // MARK: Actions
+    
+    @objc private func retryCreditScore() {
+        presenter?.retryLoadCreditScore()
     }
 }
 
@@ -78,5 +97,6 @@ extension CreditScoreViewController: CreditScoreViewControllerProtocol {
     /// Show error
     func showError() {
         // TODO: Implement
+        retryButton.isHidden = false
     }
 }
