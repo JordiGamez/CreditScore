@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditScoreViewController" customModule="CreditScore" customModuleProvider="target">
             <connections>
                 <outlet property="creditScoreView" destination="NIK-Eg-Csd" id="9Vd-T0-OVZ"/>
+                <outlet property="loadingView" destination="gIi-n9-2db" id="TAa-fE-z5M"/>
                 <outlet property="navigationBar" destination="Ppt-CO-Glg" id="A1W-MY-HID"/>
                 <outlet property="retryButton" destination="loc-lP-paL" id="Puj-jU-yjH"/>
                 <outlet property="view" destination="iN0-l3-epB" id="HmC-g3-YXn"/>
@@ -24,15 +25,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppt-CO-Glg">
-                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="0.0"/>
                     <items>
                         <navigationItem title="Title" id="NMY-qx-CSL"/>
                     </items>
                 </navigationBar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIK-Eg-Csd" customClass="CreditScoreView" customModule="CreditScore" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <viewLayoutGuide key="safeArea" id="ygU-XF-gwN"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIi-n9-2db" customClass="LoadingView" customModule="CreditScore" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loc-lP-paL">
                     <rect key="frame" x="8" y="814" width="398" height="40"/>
@@ -44,16 +49,21 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="gIi-n9-2db" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="3Ln-v8-sUE"/>
                 <constraint firstItem="Ppt-CO-Glg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3l5-Pn-6bQ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="loc-lP-paL" secondAttribute="trailing" constant="8" id="7aF-Cd-cOG"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NIK-Eg-Csd" secondAttribute="trailing" id="7l9-Km-g6m"/>
                 <constraint firstItem="loc-lP-paL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="9UA-MF-lP6"/>
                 <constraint firstItem="NIK-Eg-Csd" firstAttribute="top" secondItem="Ppt-CO-Glg" secondAttribute="bottom" id="CFL-wx-Nm4"/>
                 <constraint firstItem="Ppt-CO-Glg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DZk-Kg-xVy"/>
+                <constraint firstItem="gIi-n9-2db" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Fxb-qS-u1F"/>
                 <constraint firstItem="NIK-Eg-Csd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="T7a-ou-Png"/>
+                <constraint firstItem="gIi-n9-2db" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Xbn-J2-OPR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gIi-n9-2db" secondAttribute="bottom" id="ggV-ji-wqf"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="loc-lP-paL" secondAttribute="bottom" constant="8" id="jnL-X2-uNw"/>
                 <constraint firstItem="loc-lP-paL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="o28-eT-cfA"/>
                 <constraint firstItem="NIK-Eg-Csd" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qD7-rz-k0K"/>
+                <constraint firstItem="gIi-n9-2db" firstAttribute="top" secondItem="Ppt-CO-Glg" secondAttribute="bottom" id="qdR-pP-nXV"/>
                 <constraint firstItem="Ppt-CO-Glg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="waA-lV-ujJ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

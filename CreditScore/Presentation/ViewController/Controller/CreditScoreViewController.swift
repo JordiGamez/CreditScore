@@ -23,7 +23,16 @@ class CreditScoreViewController: BaseViewController {
             navigationBar.topItem?.titleView = title
         }
     }
-    @IBOutlet weak var creditScoreView: CreditScoreView!
+    @IBOutlet weak var creditScoreView: CreditScoreView! {
+        didSet {
+            creditScoreView.isHidden = true
+        }
+    }
+    @IBOutlet weak var loadingView: LoadingView! {
+        didSet {
+            loadingView.isHidden = true
+        }
+    }
     @IBOutlet weak var retryButton: UIButton! {
         didSet {
             retryButton.isHidden = true
@@ -75,12 +84,13 @@ extension CreditScoreViewController: CreditScoreViewControllerProtocol {
     
     /// Show loading
     func showLoading() {
-        // TODO: Implement
+        loadingView.isHidden = false
+        loadingView.message = "Calculating credit score"
     }
     
     /// Hide loading
     func hideLoading() {
-        // TODO: Implement
+        loadingView.isHidden = true
     }
     
     /// Show credit score
@@ -89,6 +99,7 @@ extension CreditScoreViewController: CreditScoreViewControllerProtocol {
     ///   - currentCreditScore: current credit score value
     ///   - maxCreditScore: maximum credit score value
     func showCreditScore(currentCreditScore: Int, maxCreditScore: Int) {
+        creditScoreView.isHidden = false
         creditScoreView.maxCreditScore = maxCreditScore
         creditScoreView.creditScore = currentCreditScore
         creditScoreView.showCreditScore()
