@@ -32,6 +32,7 @@
 		C61E80BB22D5C295009D1566 /* CreditScorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80BA22D5C295009D1566 /* CreditScorePresenter.swift */; };
 		C61E80BD22D5C29B009D1566 /* CreditScorePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80BC22D5C29B009D1566 /* CreditScorePresenterProtocol.swift */; };
 		C61E80BF22D5C2B1009D1566 /* BasePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80BE22D5C2B1009D1566 /* BasePresenterProtocol.swift */; };
+		C639978C22D8F79A00198414 /* CreditScorePresenterUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C639978B22D8F79A00198414 /* CreditScorePresenterUnitTests.swift */; };
 		C63CCD4D22D707EB00E62EA5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C63CCD4F22D707EB00E62EA5 /* Localizable.strings */; };
 		C63CCD5122D7085F00E62EA5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */; };
 		C64631FF22D870EA0036885F /* CreditScoreViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64631FE22D870EA0036885F /* CreditScoreViewControllerUnitTests.swift */; };
@@ -102,6 +103,7 @@
 		C61E80BA22D5C295009D1566 /* CreditScorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScorePresenter.swift; sourceTree = "<group>"; };
 		C61E80BC22D5C29B009D1566 /* CreditScorePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScorePresenterProtocol.swift; sourceTree = "<group>"; };
 		C61E80BE22D5C2B1009D1566 /* BasePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocol.swift; sourceTree = "<group>"; };
+		C639978B22D8F79A00198414 /* CreditScorePresenterUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScorePresenterUnitTests.swift; sourceTree = "<group>"; };
 		C63CCD4E22D707EB00E62EA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C64631FE22D870EA0036885F /* CreditScoreViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreViewControllerUnitTests.swift; sourceTree = "<group>"; };
@@ -408,6 +410,7 @@
 		C64631FC22D870B60036885F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C639978B22D8F79A00198414 /* CreditScorePresenterUnitTests.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -848,6 +851,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C639978C22D8F79A00198414 /* CreditScorePresenterUnitTests.swift in Sources */,
 				C64631FF22D870EA0036885F /* CreditScoreViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
