@@ -29,7 +29,6 @@ class CircleView: UIView {
     private var percentageToDraw: CGFloat = 0
     private var circleShapeLayer: CAShapeLayer!
     private var gradientLayer: CAGradientLayer!
-    private var textLayer: CATextLayer!
     
     // MARK: Initializers
     
