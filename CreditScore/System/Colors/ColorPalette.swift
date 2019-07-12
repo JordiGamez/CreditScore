@@ -11,6 +11,5 @@ import Foundation
 /// Store all color palette values in the app
 enum ColorPalette: String {
     
-    case white              = "#FFFFFF"
     case black              = "#000000"
 }

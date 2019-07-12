@@ -34,6 +34,7 @@
 		C61E80BF22D5C2B1009D1566 /* BasePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E80BE22D5C2B1009D1566 /* BasePresenterProtocol.swift */; };
 		C63CCD4D22D707EB00E62EA5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C63CCD4F22D707EB00E62EA5 /* Localizable.strings */; };
 		C63CCD5122D7085F00E62EA5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */; };
+		C64631FF22D870EA0036885F /* CreditScoreViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64631FE22D870EA0036885F /* CreditScoreViewControllerUnitTests.swift */; };
 		C6481C0D22D7975900DE6DFF /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6481C0C22D7975900DE6DFF /* ErrorView.swift */; };
 		C6481C0F22D7978300DE6DFF /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6481C0E22D7978300DE6DFF /* ErrorView.xib */; };
 		C64F189322D6524600AEE281 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F189222D6524600AEE281 /* CircleView.swift */; };
@@ -44,7 +45,6 @@
 		C658063F22D4F36300DB4AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C658063D22D4F36300DB4AE3 /* Main.storyboard */; };
 		C658064122D4F36400DB4AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C658064022D4F36400DB4AE3 /* Assets.xcassets */; };
 		C658064422D4F36400DB4AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C658064222D4F36400DB4AE3 /* LaunchScreen.storyboard */; };
-		C658064F22D4F36400DB4AE3 /* CreditScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658064E22D4F36400DB4AE3 /* CreditScoreTests.swift */; };
 		C658065F22D4F4A400DB4AE3 /* BaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658065E22D4F4A400DB4AE3 /* BaseClient.swift */; };
 		C658066222D4F4C900DB4AE3 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658066122D4F4C900DB4AE3 /* APIEndpoint.swift */; };
 		C658066522D4F52000DB4AE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658066422D4F52000DB4AE3 /* Constants.swift */; };
@@ -104,6 +104,7 @@
 		C61E80BE22D5C2B1009D1566 /* BasePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocol.swift; sourceTree = "<group>"; };
 		C63CCD4E22D707EB00E62EA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C63CCD5022D7085F00E62EA5 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C64631FE22D870EA0036885F /* CreditScoreViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		C6481C0C22D7975900DE6DFF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		C6481C0E22D7978300DE6DFF /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		C64F189222D6524600AEE281 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
@@ -117,7 +118,6 @@
 		C658064322D4F36400DB4AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C658064522D4F36400DB4AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C658064A22D4F36400DB4AE3 /* CreditScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C658064E22D4F36400DB4AE3 /* CreditScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreTests.swift; sourceTree = "<group>"; };
 		C658065022D4F36400DB4AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C658065E22D4F4A400DB4AE3 /* BaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClient.swift; sourceTree = "<group>"; };
 		C658066122D4F4C900DB4AE3 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
@@ -374,6 +374,52 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		C64631F822D870A00036885F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C64631F922D870A60036885F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C64631FA22D870AB0036885F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C64631FD22D870BB0036885F /* ViewController */,
+				C64631FC22D870B60036885F /* Presenter */,
+				C64631FB22D870B10036885F /* Router */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C64631FB22D870B10036885F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C64631FC22D870B60036885F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C64631FD22D870BB0036885F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C64631FE22D870EA0036885F /* CreditScoreViewControllerUnitTests.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		C64F189422D6526900AEE281 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,7 +485,9 @@
 		C658064D22D4F36400DB4AE3 /* CreditScoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				C658064E22D4F36400DB4AE3 /* CreditScoreTests.swift */,
+				C64631FA22D870AB0036885F /* Presentation */,
+				C64631F922D870A60036885F /* Domain */,
+				C64631F822D870A00036885F /* Data */,
 				C658065022D4F36400DB4AE3 /* Info.plist */,
 			);
 			path = CreditScoreTests;
@@ -573,6 +621,7 @@
 				C658064622D4F36400DB4AE3 /* Sources */,
 				C658064722D4F36400DB4AE3 /* Frameworks */,
 				C658064822D4F36400DB4AE3 /* Resources */,
+				3453950F43055634D29AE5F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -599,6 +648,7 @@
 					};
 					C658064922D4F36400DB4AE3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = C658063522D4F36300DB4AE3;
 					};
 				};
@@ -648,6 +698,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3453950F43055634D29AE5F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreditScoreTests/Pods-CreditScoreTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CreditScoreTests/Pods-CreditScoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5FA28E110F13C3784C411DBC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -774,7 +848,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C658064F22D4F36400DB4AE3 /* CreditScoreTests.swift in Sources */,
+				C64631FF22D870EA0036885F /* CreditScoreViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -976,6 +1050,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M667V6C73H;
 				INFOPLIST_FILE = CreditScoreTests/Info.plist;
@@ -986,6 +1061,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jordigamez.CreditScoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreditScore.app/CreditScore";
@@ -998,6 +1074,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M667V6C73H;
 				INFOPLIST_FILE = CreditScoreTests/Info.plist;
