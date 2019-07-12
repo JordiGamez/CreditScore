@@ -163,7 +163,6 @@ final class CreditScoreView: BaseView {
                 y: frame.size.height / 2 - outterCircleHeight / 2,
                 width: outterCircleWidth,
                 height: outterCircleHeight),
-            strokeColor: UIColor.orange.cgColor,
             lineWidth: innerCircleLineWidth,
             percentageToDraw: CGFloat(circleCompleteDegrees * currentScoreValue
                 / maxScoreValue))

@@ -14,25 +14,37 @@ class CircleView: UIView {
     // MARK: Private constants
     
     private let initialDegree: CGFloat = 90
+    private let gradientColors: [CGColor] = [
+        UIColor.orange.cgColor,
+        UIColor.yellow.cgColor,
+        UIColor.green.cgColor
+    ]
     private let strokeEndKey = "strokeEnd"
     private let animateCircleKey = "animateCircle"
     
     // MARK: Private variables
     
-    private var strokeColor = UIColor.clear.cgColor
+    private var strokeColor: CGColor = UIColor.black.cgColor
     private var lineWidth: CGFloat = 0
     private var percentageToDraw: CGFloat = 0
     private var circleShapeLayer: CAShapeLayer!
+    private var gradientLayer: CAGradientLayer!
     
     // MARK: Initializers
     
-    init(frame: CGRect, strokeColor: CGColor, lineWidth: CGFloat, percentageToDraw: CGFloat = 360) {
+    init(frame: CGRect, strokeColor: CGColor? = nil, lineWidth: CGFloat, percentageToDraw: CGFloat = 360) {
         super.init(frame: frame)
-        self.strokeColor = strokeColor
+        if let strokeColor = strokeColor {
+            self.strokeColor = strokeColor
+        }
         self.lineWidth = lineWidth
         self.percentageToDraw = percentageToDraw
         setBackgroundColor()
-        addCircleShapeLayer()
+        if strokeColor == nil {
+            addCircleShapeLayer(withGradient: true)
+        } else {
+            addCircleShapeLayer()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -47,7 +59,7 @@ class CircleView: UIView {
     }
     
     /// Add circle shape layer
-    private func addCircleShapeLayer() {
+    private func addCircleShapeLayer(withGradient: Bool = false) {
         let circlePath = UIBezierPath(
             arcCenter: CGPoint(x: frame.size.width / 2.0,
                                y: frame.size.height / 2.0),
@@ -60,9 +72,23 @@ class CircleView: UIView {
         circleShapeLayer.fillColor = UIColor.clear.cgColor
         circleShapeLayer.strokeColor = strokeColor
         circleShapeLayer.lineWidth = lineWidth
+        circleShapeLayer.lineCap = .round
         circleShapeLayer.strokeEnd = 0.0
         
-        layer.addSublayer(circleShapeLayer)
+        if withGradient {
+            gradientLayer = CAGradientLayer()
+            gradientLayer.startPoint = CGPoint(x: 0.45, y: 0.5)
+            gradientLayer.endPoint = CGPoint(x: 0.45, y: 0)
+            gradientLayer.locations = [0, 0.5, 1]
+            gradientLayer.colors = gradientColors
+            gradientLayer.frame = bounds
+            gradientLayer.type = .conic
+            gradientLayer.mask = circleShapeLayer
+            
+            layer.addSublayer(gradientLayer)
+        } else {
+            layer.addSublayer(circleShapeLayer)
+        }
     }
     
     // MARK: Public methods
@@ -75,7 +101,7 @@ class CircleView: UIView {
         animation.duration = duration
         animation.fromValue = 0
         animation.toValue = 1
-        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         showCircle()
         
         circleShapeLayer.add(animation, forKey: animateCircleKey)
