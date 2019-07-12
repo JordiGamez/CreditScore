@@ -175,7 +175,7 @@ class CreditScorePresenterUnitTests: QuickSpec {
                     expect(viewController?.hideErrorIsCalled).to(beTrue())
                 }
                 it("should call useCase execute method") {
-                    expect(useCase?.executeIsCalled).to(beTrue())
+                    expect(useCase?.executeIsCalled).toEventually(beTrue())
                 }
             }
         }
