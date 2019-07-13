@@ -34,12 +34,12 @@ final class CreditScoreView: BaseView {
     private let customBackgroundColor: UIColor = .clear
     private let timeInterval: TimeInterval = 0.005
     private let circleCompleteDegrees = 360
-    private let outterCircleWidth: CGFloat = 200
-    private let outterCircleHeight: CGFloat = 200
-    private let innerCircleWidth: CGFloat = 215
-    private let innerCircleHeight: CGFloat = 215
-    private let outterCircleLineWidth: CGFloat = 2
+    private let innerCircleWidth: CGFloat = 200
+    private let innerCircleHeight: CGFloat = 200
+    private let outterCircleWidth: CGFloat = 215
+    private let outterCircleHeight: CGFloat = 215
     private let innerCircleLineWidth: CGFloat = 3
+    private let outterCircleLineWidth: CGFloat = 2
     private let drawCircleAnimationDuration: Double = 2
     
     // MARK: Private variables
@@ -48,7 +48,6 @@ final class CreditScoreView: BaseView {
     private var maxScoreValue = 0
     private var currentScoreValue = 0
     private var scoreValue = 0
-    private var innerCircleView: CircleView!
     
     // MARK: Public variables
     
@@ -65,8 +64,9 @@ final class CreditScoreView: BaseView {
             if let maxCreditScore = maxCreditScore {
                 maxScoreValue = maxCreditScore
                 let baseString = "creditScore_outOf".localize()
-                outOfLabel.text = baseString.replacingOccurrences(of: "%s",
-                                                                  with: String(maxCreditScore))
+                outOfLabel.text =
+                    baseString.replacingOccurrences(of: "%s",
+                                                    with: String(maxCreditScore))
             }
         }
     }
@@ -133,7 +133,8 @@ final class CreditScoreView: BaseView {
     private func startTimerToUpdateCurrentScoreValue() {
         timer = Timer.scheduledTimer(timeInterval: timeInterval,
                                      target: self,
-                                     selector: #selector(updateCurrentScoreValueLabel),
+                                     selector: #selector(
+                                        updateCurrentScoreValueLabel),
                                      userInfo: nil,
                                      repeats: true)
     }
@@ -142,10 +143,10 @@ final class CreditScoreView: BaseView {
     private func drawOutterCircle() {
         let outterCircleView = CircleView(
             frame: CGRect(
-                x: frame.size.width / 2 - innerCircleWidth / 2,
-                y: frame.size.height / 2 - innerCircleHeight / 2,
-                width: innerCircleWidth,
-                height: innerCircleHeight),
+                x: frame.size.width / 2 - outterCircleWidth / 2,
+                y: frame.size.height / 2 - outterCircleHeight / 2,
+                width: outterCircleWidth,
+                height: outterCircleHeight),
             strokeColor: UIColor.black.cgColor,
             lineWidth: outterCircleLineWidth)
         
@@ -157,12 +158,12 @@ final class CreditScoreView: BaseView {
     
     /// Draw inner circle
     private func drawInnerCircle() {
-        innerCircleView = CircleView(
+        let innerCircleView = CircleView(
             frame: CGRect(
-                x: frame.size.width / 2 - outterCircleWidth / 2,
-                y: frame.size.height / 2 - outterCircleHeight / 2,
-                width: outterCircleWidth,
-                height: outterCircleHeight),
+                x: frame.size.width / 2 - innerCircleWidth / 2,
+                y: frame.size.height / 2 - innerCircleHeight / 2,
+                width: innerCircleWidth,
+                height: innerCircleHeight),
             lineWidth: innerCircleLineWidth,
             percentageToDraw: CGFloat(circleCompleteDegrees * currentScoreValue
                 / maxScoreValue))
